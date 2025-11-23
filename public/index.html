@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dadar Electronics | Refurbished Tech Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topnav">
+    <div class="nav-left">
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="logo">
+        <div class="logo-mark">DE</div>
+        <span class="logo-text">Dadar Electronics</span>
+      </div>
+      <div class="category-trigger">All Categories ▾</div>
+    </div>
+    <div class="nav-search">
+      <input type="text" placeholder="What are you looking for...">
+      <button class="clear-btn">Clear</button>
+    </div>
+    <div class="nav-right">
+      <div class="nav-contact">
+        <div class="phone-label">For Bulk Enquiries</div>
+        <div class="phone-number" id="nav-phone">+91-9035009233</div>
+      </div>
+      <div class="nav-icons">
+        <div class="icon-circle">🔍</div>
+        <div class="icon-circle">🛍️</div>
+        <div class="nav-price">
+          <div class="price-value">32.25</div>
+          <div class="price-change">(-5.01%) ↓</div>
+        </div>
+        <div class="icon-circle">📍</div>
+        <div class="store-label">Store</div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-links" id="main-links"></nav>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-slider" id="hero-slider"></div>
+      <div class="hero-dots" id="hero-dots"></div>
+    </section>
+
+    <section class="metrics" id="metrics"></section>
+
+    <section class="trending">
+      <div class="section-heading">
+        <h2>Trending Tech, <span class="accent">Earth-Friendly Vibes</span></h2>
+        <div class="section-actions">
+          <button class="pill-btn active">Best Sellers</button>
+          <button class="pill-btn">New Arrivals</button>
+        </div>
+      </div>
+      <div class="slider-shell">
+        <button class="slider-btn" data-target="trending" data-dir="left">‹</button>
+        <div class="card-track" id="trending-track"></div>
+        <button class="slider-btn" data-target="trending" data-dir="right">›</button>
+      </div>
+    </section>
+
+    <section class="budget">
+      <h2>Best Deals on a <span class="accent">Budget</span></h2>
+      <div class="grid" id="deal-grid"></div>
+    </section>
+
+    <section class="categories">
+      <h3>Explore <span class="accent">Refurbished</span> Tech</h3>
+      <div class="category-row" id="category-row"></div>
+    </section>
+
+    <section class="hexatrust">
+      <div class="hex-media">
+        <img id="hex-image" alt="HexaTrust badge">
+      </div>
+      <div class="hex-copy">
+        <h3><span class="accent">HexaTrust</span> - The Gold Standard in Refurbished IT Asset</h3>
+        <p id="hex-desc"></p>
+        <ul id="hex-list"></ul>
+        <button class="primary-btn">Learn More</button>
+      </div>
+    </section>
+
+    <section class="insider">
+      <h2>The <span class="accent">Insider</span> Story</h2>
+      <div class="slider-shell">
+        <button class="slider-btn" data-target="insider" data-dir="left">‹</button>
+        <div class="story-track" id="insider-track"></div>
+        <button class="slider-btn" data-target="insider" data-dir="right">›</button>
+      </div>
+    </section>
+
+    <section class="video-feature" id="video-feature">
+      <div class="video-overlay">
+        <div class="play-btn">▶</div>
+        <p id="video-title"></p>
+      </div>
+    </section>
+
+    <section class="awards">
+      <h2>Our Wins? They’re <span class="accent">Green and Clean</span></h2>
+      <div class="grid awards-grid" id="awards-grid"></div>
+    </section>
+
+    <section class="blogs">
+      <h2>Eco Tips & <span class="accent">Tech</span> Talks</h2>
+      <div class="grid blog-grid" id="blog-grid"></div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What’s <span class="accent">Expert</span> Says</h2>
+      <div class="slider-shell">
+        <button class="slider-btn" data-target="testimonials" data-dir="left">‹</button>
+        <div class="story-track" id="testimonial-track"></div>
+        <button class="slider-btn" data-target="testimonials" data-dir="right">›</button>
+      </div>
+    </section>
+
+    <section class="partners">
+      <h2>Our Partners in <span class="accent">Green Crime</span></h2>
+      <div class="partner-row" id="partner-row"></div>
+    </section>
+
+    <section class="faq">
+      <h2>4 questions people always ask</h2>
+      <div class="faq-list" id="faq-list"></div>
+      <div class="faq-cta">
+        <button class="primary-btn">Know More</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark">DE</div>
+          <span class="logo-text">Dadar Electronics</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="column">
+          <h4>About</h4>
+          <ul id="footer-about"></ul>
+        </div>
+        <div class="column">
+          <h4>Our Products</h4>
+          <ul id="footer-products"></ul>
+        </div>
+        <div class="column">
+          <h4>Help</h4>
+          <ul id="footer-help"></ul>
+        </div>
+        <div class="column">
+          <h4>Contact</h4>
+          <ul id="footer-contact"></ul>
+        </div>
+      </div>
+      <div class="newsletter">
+        <h4>Sign up to our newsletter</h4>
+        <div class="newsletter-box">
+          <span class="mail-icon">✉️</span>
+          <input type="email" placeholder="Enter email">
+          <button class="send-btn">→</button>
+        </div>
+        <div class="social-row" id="social-row">
+          <div class="icon-circle">f</div>
+          <div class="icon-circle">X</div>
+          <div class="icon-circle">Ig</div>
+          <div class="icon-circle">In</div>
+          <div class="icon-circle">YT</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Dadar Electronics. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+  <button class="chat-fab" aria-label="Chat">💬</button>
+</body>
+</html>
