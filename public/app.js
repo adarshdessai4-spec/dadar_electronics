@@ -355,17 +355,65 @@ function setHeroSlide(idx) {
 function renderMetrics(stats) {
   metricsEl.innerHTML = stats
     .map(
-      (stat) => `
-      <div class="metric-card">
+      (stat, idx) => `
+      <div class="metric-card" data-target="${stat.value}" data-index="${idx}">
         <div class="metric-icon">${stat.icon}</div>
         <div>
-          <div class="metric-value">${stat.value}</div>
+          <div class="metric-value" id="metric-${idx}">0</div>
           <div class="metric-label">${stat.label}</div>
         </div>
       </div>
     `
     )
     .join('');
+  startCounters(stats);
+}
+
+function startCounters(stats) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const idx = entry.target.dataset.index;
+          animateCount(idx, stats[idx].value);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  document.querySelectorAll('.metric-card').forEach((card) => observer.observe(card));
+}
+
+function animateCount(idx, targetText) {
+  const el = document.getElementById(`metric-${idx}`);
+  if (!el) return;
+
+  const parsed = parseMetricValue(targetText);
+  const duration = 1200;
+  const start = performance.now();
+
+  const step = (now) => {
+    const progress = Math.min((now - start) / duration, 1);
+    const current = Math.floor(parsed.value * progress);
+    el.textContent = formatMetricValue(current, parsed.suffix);
+    if (progress < 1) requestAnimationFrame(step);
+  };
+
+  requestAnimationFrame(step);
+}
+
+function parseMetricValue(text) {
+  const match = text.match(/([0-9.,]+)\s*([A-Za-z+() ]*)?/);
+  if (!match) return { value: 0, suffix: '' };
+  const num = parseFloat(match[1].replace(/,/g, ''));
+  const suffix = (match[2] || '').trim();
+  return { value: isNaN(num) ? 0 : num, suffix };
+}
+
+function formatMetricValue(value, suffix) {
+  return `${value.toLocaleString()}${suffix ? ' ' + suffix : ''}`;
 }
 
 function renderProducts(products) {
