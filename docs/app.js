@@ -21,6 +21,13 @@ const footerAbout = document.getElementById('footer-about');
 const footerProducts = document.getElementById('footer-products');
 const footerHelp = document.getElementById('footer-help');
 const footerContact = document.getElementById('footer-contact');
+const drawerList = document.getElementById('drawer-list');
+const drawer = document.getElementById('mobile-drawer');
+const drawerBackdrop = document.getElementById('drawer-backdrop');
+const drawerPhone = document.getElementById('drawer-phone');
+const hamburger = document.querySelector('.hamburger');
+const drawerClose = document.querySelector('.drawer-close');
+const drawerTabs = document.querySelectorAll('.drawer-tab');
 
 let heroSlides = [];
 let heroIndex = 0;
@@ -299,6 +306,7 @@ loadContent();
 function renderNav(nav) {
   navPhone.textContent = nav.phone;
   mainLinks.innerHTML = nav.links.map((link) => `<span>${link}</span>`).join('');
+  renderDrawer(nav);
 }
 
 function renderHero(slides) {
@@ -523,6 +531,42 @@ function renderFooter(footer) {
   footerHelp.innerHTML = footer.help.map((item) => `<li>${item}</li>`).join('');
   footerContact.innerHTML = footer.contact.map((item) => `<li>${item}</li>`).join('');
 }
+
+function renderDrawer(nav) {
+  drawerPhone.textContent = nav.phone;
+  drawerList.innerHTML = nav.links
+    .map(
+      (link) => `
+      <div class="drawer-item">
+        <span>${link}</span>
+        <span>⌄</span>
+      </div>
+    `
+    )
+    .join('');
+}
+
+function toggleDrawer(open) {
+  const shouldOpen = open ?? !drawer.classList.contains('open');
+  drawer.setAttribute('aria-hidden', String(!shouldOpen));
+  drawer.classList.toggle('open', shouldOpen);
+  drawerBackdrop.classList.toggle('show', shouldOpen);
+  document.body.style.overflow = shouldOpen ? 'hidden' : '';
+}
+
+hamburger?.addEventListener('click', () => toggleDrawer(true));
+drawerClose?.addEventListener('click', () => toggleDrawer(false));
+drawerBackdrop?.addEventListener('click', () => toggleDrawer(false));
+document.addEventListener('keyup', (e) => {
+  if (e.key === 'Escape') toggleDrawer(false);
+});
+
+drawerTabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    drawerTabs.forEach((t) => t.classList.remove('active'));
+    tab.classList.add('active');
+  });
+});
 
 document.querySelectorAll('.slider-btn').forEach((btn) => {
   btn.addEventListener('click', () => {
