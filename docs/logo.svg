@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .ring { fill: #e40000; }
+      .cutout { fill: #f6f7fb; }
+      .bar { fill: #4b2ec9; }
+      .text-main { fill: #0a0a0a; font-family: 'Poppins', sans-serif; font-size: 96px; font-weight: 800; }
+      .text-small { fill: #0a0a0a; font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 1.5px; }
+    </style>
+  </defs>
+  <circle class="ring" cx="256" cy="256" r="225"/>
+  <circle class="cutout" cx="256" cy="256" r="160"/>
+  <rect class="bar" x="40" y="206" width="432" height="100" rx="8"/>
+  <text class="text-main" x="256" y="282" text-anchor="middle">DADAR</text>
+  <text class="text-small" x="256" y="122" text-anchor="middle">DADAR ELECTRONICS TRADING LLC</text>
+  <text class="text-small" x="256" y="404" text-anchor="middle">DADAR ELECTRONICS TRADING LLC</text>
+</svg>

@@ -81,6 +81,11 @@ main {
   letter-spacing: 0.5px;
 }
 
+.logo-img {
+  height: 44px;
+  width: auto;
+}
+
 .logo-mark {
   width: 42px;
   height: 42px;
