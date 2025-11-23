@@ -28,6 +28,10 @@ const drawerPhone = document.getElementById('drawer-phone');
 const hamburger = document.querySelector('.hamburger');
 const drawerClose = document.querySelector('.drawer-close');
 const drawerTabs = document.querySelectorAll('.drawer-tab');
+const searchInput = document.getElementById('nav-search-input');
+const searchBtn = document.getElementById('nav-search-btn');
+const cartBtn = document.getElementById('nav-cart-btn');
+const locationBtn = document.getElementById('nav-location-btn');
 
 let heroSlides = [];
 let heroIndex = 0;
@@ -566,6 +570,41 @@ drawerTabs.forEach((tab) => {
     drawerTabs.forEach((t) => t.classList.remove('active'));
     tab.classList.add('active');
   });
+});
+
+function handleSearch() {
+  const term = (searchInput?.value || '').trim();
+  if (!term) {
+    alert('Enter a product or category to search.');
+    return;
+  }
+  alert(`Search for: ${term}\n(Search wiring placeholder)`);
+}
+
+function handleCart() {
+  alert('Cart is coming soon. For now, pick a product and use Quick View.');
+}
+
+function handleLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        alert(`Location captured.\nLat: ${pos.coords.latitude.toFixed(4)}, Lng: ${pos.coords.longitude.toFixed(4)}`);
+      },
+      () => {
+        alert('Unable to fetch location. Please allow location access.');
+      }
+    );
+  } else {
+    alert('Geolocation not supported on this browser.');
+  }
+}
+
+searchBtn?.addEventListener('click', handleSearch);
+cartBtn?.addEventListener('click', handleCart);
+locationBtn?.addEventListener('click', handleLocation);
+searchInput?.addEventListener('keyup', (e) => {
+  if (e.key === 'Enter') handleSearch();
 });
 
 document.querySelectorAll('.slider-btn').forEach((btn) => {

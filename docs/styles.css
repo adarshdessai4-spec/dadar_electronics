@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #f6f7fb;
+  background: #f8f7ff;
   color: #121212;
 }
 
@@ -25,7 +25,7 @@ p {
 }
 
 .accent {
-  color: #1fa08f;
+  color: #7a5bff;
 }
 
 main {
@@ -39,7 +39,7 @@ main {
   align-items: center;
   gap: 24px;
   padding: 14px 28px;
-  background: #0f2f4f;
+  background: linear-gradient(90deg, #c7b8ff, #a38bff);
   color: #fff;
 }
 
@@ -92,7 +92,7 @@ main {
   background: transparent;
   font-size: 26px;
   cursor: pointer;
-  color: #0f2f4f;
+  color: #7a5bff;
   padding: 4px 8px;
 }
 
@@ -102,7 +102,7 @@ main {
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  color: #0f2f4f;
+  color: #7a5bff;
 }
 
 .drawer-price {
@@ -121,7 +121,7 @@ main {
   background: #f9fafc;
   padding: 10px 12px;
   font-weight: 600;
-  color: #0f2f4f;
+  color: #7a5bff;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -155,7 +155,7 @@ main {
   width: 140px;
   padding: 12px;
   border: none;
-  background: #0f2f4f;
+  background: #7a5bff;
   color: #fff;
   border-radius: 999px;
   font-weight: 700;
@@ -163,11 +163,11 @@ main {
 }
 
 .drawer-contact {
-  background: #0f2f4f;
+  background: #7a5bff;
   color: #fff;
   padding: 14px;
   border-radius: 12px;
-  box-shadow: 0 12px 24px rgba(15, 47, 79, 0.24);
+  box-shadow: 0 12px 24px rgba(122, 91, 255, 0.24);
   font-size: 14px;
 }
 
@@ -299,12 +299,13 @@ main {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   display: grid;
   place-items: center;
-  color: #fff;
+  color: #4b2ec9;
   font-size: 15px;
-  background: rgba(255, 255, 255, 0.15);
+  background: #fff;
+  cursor: pointer;
 }
 
 .nav-price {
@@ -316,16 +317,16 @@ main {
 
 .price-value {
   font-weight: 700;
-  color: #fff;
+  color: #4b2ec9;
 }
 
 .price-change {
   font-size: 12px;
-  color: #f5f7fb;
+  color: #6d6d7b;
 }
 
 .store-label {
-  color: #fff;
+  color: #4b2ec9;
   font-weight: 600;
 }
 
@@ -334,7 +335,7 @@ main {
   flex-wrap: wrap;
   gap: 18px;
   padding: 12px 28px;
-  background: #fff;
+  background: #f9f7ff;
   border-bottom: 1px solid #e5e7ef;
   font-weight: 600;
 }
@@ -347,7 +348,7 @@ main {
 .main-links span::after {
   content: '+';
   margin-left: 6px;
-  color: #1fa08f;
+  color: #7a5bff;
 }
 
 .hero {
@@ -368,7 +369,7 @@ main {
 .hero-slide {
   position: relative;
   min-height: 520px;
-  background: linear-gradient(180deg, #0f2f4f, #0c243a);
+  background: linear-gradient(180deg, #d6cfff, #b59cff);
   color: #fff;
   border-radius: 18px;
   overflow: hidden;
@@ -402,14 +403,14 @@ main {
   display: inline-flex;
   gap: 10px;
   align-items: center;
-  background: #1fa08f;
+  background: #7a5bff;
   color: #fff;
   border: none;
   padding: 12px 18px;
   border-radius: 999px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(31, 160, 143, 0.35);
+  box-shadow: 0 10px 30px rgba(122, 91, 255, 0.35);
 }
 
 .hero-slide img {
@@ -434,7 +435,7 @@ main {
 }
 
 .hero-dots .active {
-  background: #0f2f4f;
+  background: #7a5bff;
 }
 
 .metrics {
@@ -500,7 +501,7 @@ main {
 }
 
 .pill-btn.active {
-  background: #0f2f4f;
+  background: #7a5bff;
   color: #fff;
 }
 
@@ -593,7 +594,7 @@ main {
 
 .badge {
   background: #f5f7fb;
-  color: #0f2f4f;
+  color: #7a5bff;
   padding: 4px 8px;
   border-radius: 10px;
   font-weight: 700;
@@ -604,7 +605,7 @@ main {
   margin-top: 8px;
   padding: 12px;
   border: none;
-  background: #0f2f4f;
+  background: #7a5bff;
   color: #fff;
   font-weight: 700;
   border-radius: 999px;
@@ -638,7 +639,7 @@ main {
 
 .deal-title {
   font-weight: 700;
-  color: #0f2f4f;
+  color: #7a5bff;
 }
 
 .deal-subtitle {
@@ -711,13 +712,13 @@ main {
 
 .primary-btn {
   border: none;
-  background: #0f2f4f;
+  background: #7a5bff;
   color: #fff;
   padding: 12px 18px;
   border-radius: 999px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 12px 24px rgba(15, 47, 79, 0.25);
+  box-shadow: 0 12px 24px rgba(122, 91, 255, 0.25);
 }
 
 .story-card {
@@ -758,7 +759,7 @@ main {
   min-height: 320px;
   border-radius: 18px;
   overflow: hidden;
-  background: #0f2f4f;
+  background: #b7a4ff;
 }
 
 .video-feature .video-overlay {
@@ -779,7 +780,7 @@ main {
   display: grid;
   place-items: center;
   font-size: 28px;
-  color: #0f2f4f;
+  color: #7a5bff;
   box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
 }
 
@@ -838,7 +839,7 @@ main {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #0f2f4f;
+  color: #7a5bff;
   font-weight: 600;
   font-size: 13px;
 }
@@ -956,7 +957,7 @@ main {
 
 .send-btn {
   border: none;
-  background: #0f2f4f;
+  background: #7a5bff;
   color: #fff;
   width: 36px;
   height: 36px;
@@ -1086,7 +1087,7 @@ main {
     padding: 32px 20px 24px;
     text-align: center;
     align-content: space-between;
-    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1), transparent 35%), linear-gradient(180deg, #0f2f4f 0%, #0f2f4f 30%, #0c243a 100%);
+    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1), transparent 35%), linear-gradient(180deg, #d6cfff 0%, #c5b3ff 30%, #a38bff 100%);
     border-radius: 0;
   }
 
