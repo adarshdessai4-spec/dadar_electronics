@@ -535,7 +535,7 @@ function renderHero(slides) {
   heroSlider.innerHTML = heroSlides
     .map(
       (slide) => `
-      <div class="hero-slide" style="background: linear-gradient(180deg, rgba(42,34,50,0.9), rgba(195,70,88,0.92));">
+      <div class="hero-slide" style="background: linear-gradient(180deg, rgba(12,79,140,0.9), rgba(31,127,198,0.92));">
         <div class="copy">
           <h1>${slide.title}</h1>
           <p>${slide.description}</p>

@@ -1,16 +1,16 @@
 :root {
-  --bg: #f6f3fb;
+  --bg: #f4f7fb;
   --panel: #ffffff;
   --card: #ffffff;
-  --card-strong: #f1edf8;
-  --text: #161321;
-  --muted: #5e5672;
-  --accent: #c34658;
-  --accent-2: #8c3058;
-  --line: #e4dfef;
-  --pill: #f1edf8;
-  --shadow: 0 12px 32px rgba(19, 9, 35, 0.14);
-  --shadow-soft: 0 10px 24px rgba(19, 9, 35, 0.12);
+  --card-strong: #e9f0f7;
+  --text: #0f1a2c;
+  --muted: #5a6880;
+  --accent: #1f7fc6;
+  --accent-2: #0c4f8c;
+  --line: #dde6f0;
+  --pill: #eef3f8;
+  --shadow: 0 12px 32px rgba(9, 25, 52, 0.14);
+  --shadow-soft: 0 10px 24px rgba(9, 25, 52, 0.12);
 }
 
 * {
@@ -54,7 +54,7 @@ main {
   align-items: center;
   gap: 24px;
   padding: 14px 28px;
-  background: linear-gradient(90deg, #2a2232, #8c3058, #c34658);
+  background: linear-gradient(90deg, #0c4f8c, #1f7fc6, #5cb3ff);
   color: #fff;
 }
 
@@ -109,7 +109,7 @@ main {
 .category-trigger {
   font-weight: 600;
   padding: 10px 14px;
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.16);
   border-radius: 10px;
   cursor: pointer;
   color: #fff;
@@ -519,7 +519,7 @@ main {
 }
 
 .pill-btn.active {
-  background: linear-gradient(135deg, #1f1a26, #c34658);
+  background: linear-gradient(135deg, #0c4f8c, #1f7fc6);
   color: #fff;
 }
 
