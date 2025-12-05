@@ -2,7 +2,8 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const BASE_PORT = parseInt(process.env.PORT, 10) || 3000;
+const MAX_PORT_SHIFT = 10;
 
 const content = {
   nav: {
@@ -404,6 +405,21 @@ app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+function startServer(port, attempt = 0) {
+  const server = app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
+  });
+
+  server.on('error', (err) => {
+    if (err.code === 'EADDRINUSE' && attempt < MAX_PORT_SHIFT) {
+      const nextPort = port + 1;
+      console.warn(`Port ${port} is in use. Trying ${nextPort}...`);
+      startServer(nextPort, attempt + 1);
+    } else {
+      console.error('Failed to start server', err);
+      process.exit(1);
+    }
+  });
+}
+
+startServer(BASE_PORT);
