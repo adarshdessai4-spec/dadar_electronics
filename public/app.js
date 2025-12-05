@@ -41,29 +41,29 @@ const fallbackContent = {
   nav: {
     logoText: 'Dadar Electronics',
     phone: '+91-9035009233',
-    links: ['MacBook', 'Products', 'Students', 'Bulk Orders', 'Dream On', 'Company', 'Store', 'More']
+    links: ['MacBook', 'Business Laptops', 'Gaming', 'Student Deals', '2-in-1', 'Creator Series', 'Clearance', 'Accessories']
   },
   heroSlides: [
     {
-      title: '#1 India’s Most Trusted PC Refurbisher',
-      description: 'Awarded for elevating refurbished tech with sustainable style and reliable performance.',
-      cta: 'Shop Now',
-      accent: 'Earth-Friendly Vibes',
-      image: 'https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1400&q=80'
+      title: 'Refurbished Laptops That Feel Brand New',
+      description: 'Certified MacBooks, ThinkPads, and XPS units tuned for productivity, design, and travel.',
+      cta: 'Shop Laptops',
+      accent: 'Grade A Quality',
+      image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1400&q=80'
     },
     {
-      title: 'Certified Quality. Like-New Experience.',
-      description: 'Precision tested devices with transparent grading, fair prices, and doorstep delivery nationwide.',
-      cta: 'Explore Devices',
-      accent: 'HexaTrust Promise',
-      image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1400&q=80'
+      title: 'Built for Coders, Designers, and Founders',
+      description: 'Thin-and-light ultrabooks with pro warranties and zero hidden issues.',
+      cta: 'Pick Your Build',
+      accent: 'Ready to Work',
+      image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=1400&q=80'
     },
     {
-      title: 'Smart Tech for Smart Budgets.',
-      description: 'Pick from curated laptops, desktops, and mini PCs tuned for work, study, and creators.',
-      cta: 'Browse Collections',
-      accent: 'Fresh Drops Weekly',
-      image: 'https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=1400&q=80'
+      title: 'Save Big. Stay Sustainable.',
+      description: 'Laptop-only catalog with transparent grading, fresh batteries, and doorstep delivery.',
+      cta: 'See Deals',
+      accent: 'Up to 60% Off',
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80'
     }
   ],
   stats: [
@@ -72,83 +72,103 @@ const fallbackContent = {
     { icon: '🌍', label: 'CO₂ Reduced', value: '18 Kt' },
     { icon: '⭐', label: 'Google Rating', value: '4.3 (3.8K+)' }
   ],
-  trendingTitle: 'Trending Tech, Earth-Friendly Vibes',
+  trendingTitle: 'Trending Laptops for Work, Study & Play',
   products: [
     {
-      title: 'Dell Latitude Laptop | 5420 | Intel i7-11th Gen | 14” HD Touchscreen',
-      price: '₹31,949',
-      mrp: '₹86,799',
-      badge: '70% off',
-      stock: 'In stock (398 units)',
-      image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=900&q=80'
+      title: 'MacBook Air M1 | 13” Retina | 8GB / 256GB | Space Grey',
+      price: '₹56,999',
+      mrp: '₹92,900',
+      badge: '39% off',
+      stock: 'In stock (54 units)',
+      image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=900&q=80'
     },
     {
-      title: 'Dell Latitude Laptop | 5490 | Intel i7-8th Gen | 14” HD | Win 11 Pro',
-      price: '₹22,449',
-      mrp: '₹74,079',
-      badge: '70% off',
-      stock: 'In stock (127 units)',
+      title: 'Lenovo ThinkPad X1 Carbon | i7 10th Gen | 14” FHD | Backlit KB',
+      price: '₹48,449',
+      mrp: '₹1,19,999',
+      badge: '60% off',
+      stock: 'In stock (72 units)',
       image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80'
     },
     {
-      title: 'Lenovo ThinkPad Laptop | L480 | Intel i5-8th Gen | 14” HD | Win 11 Pro',
-      price: '₹18,449',
-      mrp: '₹61,049',
-      badge: '70% off',
-      stock: 'In stock (192 units)',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80'
+      title: 'Dell XPS 13 | i7 11th Gen | 16GB | 512GB SSD | InfinityEdge',
+      price: '₹62,249',
+      mrp: '₹1,38,900',
+      badge: '55% off',
+      stock: 'In stock (31 units)',
+      image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=900&q=80'
     },
     {
-      title: 'Dell OptiPlex 3080 Mini PC | Intel i5-10th Gen | Win 11 Pro',
-      price: '₹23,549',
-      mrp: '₹78,653',
-      badge: '70% off',
-      stock: 'In stock (113 units)',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80'
+      title: 'HP Envy x360 2-in-1 | Ryzen 5 | Touch | 8GB / 512GB SSD',
+      price: '₹49,999',
+      mrp: '₹98,999',
+      badge: '50% off',
+      stock: 'In stock (86 units)',
+      image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=900&q=80'
     },
     {
-      title: 'HP EliteBook | 840 G5 | Intel i5-8th Gen | 14” | Win 11 Pro',
-      price: '₹19,999',
-      mrp: '₹64,999',
-      badge: '69% off',
-      stock: 'In stock (211 units)',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80'
+      title: 'ASUS ROG Zephyrus G14 | Ryzen 9 | RTX 3060 | 144Hz',
+      price: '₹94,499',
+      mrp: '₹1,89,999',
+      badge: '50% off',
+      stock: 'In stock (19 units)',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80'
     },
     {
-      title: 'Lenovo ThinkCentre M910 | Mini PC | Intel i5-6th Gen | Win 10 Pro',
-      price: '₹11,949',
-      mrp: '₹39,099',
-      badge: '70% off',
-      stock: 'In stock (114 units)',
-      image: 'https://images.unsplash.com/photo-1587202372775-98973f961c78?auto=format&fit=crop&w=900&q=80'
+      title: 'Acer Swift 3 | Ryzen 7 | 8GB | 512GB SSD | 1.2kg Ultrabook',
+      price: '₹38,449',
+      mrp: '₹82,999',
+      badge: '54% off',
+      stock: 'In stock (142 units)',
+      image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80'
     }
   ],
   categories: [
-    { label: 'Laptops', image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Desktops', image: 'https://images.unsplash.com/photo-1587202372775-98973f961c78?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Mini PC', image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=300&q=80' },
-    { label: 'ChromeBook', image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=300&q=80' },
-    { label: 'All in One', image: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Accessories', image: 'https://images.unsplash.com/photo-1517059224940-d4af9eec41e5?auto=format&fit=crop&w=300&q=80' }
+    { label: 'MacBook', image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Ultrabooks', image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Business Laptops', image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Gaming Laptops', image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=300&q=80' },
+    { label: '2-in-1 Convertibles', image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Student Deals', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=300&q=80' }
   ],
   deals: [
-    { title: 'Under ₹9999', subtitle: 'Budget Friendly', desc: 'Great for students & basic use', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80' },
-    { title: 'Under ₹14999', subtitle: 'Mid-Range Value', desc: 'Perfect balance of price & performance', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80' },
-    { title: 'Under ₹19999', subtitle: 'Premium Experience', desc: 'Top-tier devices for pros & creators', image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=800&q=80' },
-    { title: 'Above ₹20000', subtitle: 'Ultimate Choice', desc: 'Unmatched power for ultimate productivity', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80' }
+    {
+      title: 'Under ₹40,000',
+      subtitle: 'Value Essentials',
+      desc: 'Daily drivers with SSDs and fresh batteries',
+      image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      title: 'Under ₹60,000',
+      subtitle: 'Premium Ultrabooks',
+      desc: 'Featherweight laptops with all-day endurance',
+      image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      title: 'Under ₹80,000',
+      subtitle: 'Creator Setups',
+      desc: 'Color-accurate displays and fast SSDs',
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      title: 'Above ₹80,000',
+      subtitle: 'Flagship & Gaming',
+      desc: 'Maxed-out GPUs, vapor chamber cooling, pro care',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80'
+    }
   ],
   hexatrust: {
-    title: 'HexaTrust - The Gold Standard in Refurbished IT Asset',
-    desc: 'HexaTrust is our commitment to transparency, quality, and customer satisfaction. It defines the Dadar Electronics promise — to make refurbished IT products not just a smart choice, but a trusted one.',
+    title: 'HexaTrust - Certified Refurbished Laptops',
+    desc: 'Every laptop is keyboard-to-battery tested, data wiped, and backed with a clear warranty so you can upgrade with confidence.',
     bullets: [
       'Price value guarantee',
-      'Buyback & return assurance',
+      'Fresh thermal paste & battery health check',
       '1 year warranty',
-      'Data security',
+      'Secure data sanitization',
       'Like new assured',
       'Performance guarantee'
     ],
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80'
+    image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80'
   },
   awards: [
     {
@@ -169,67 +189,67 @@ const fallbackContent = {
   ],
   blogs: [
     {
-      title: 'The Cost-Benefit Analysis of Buying Refurbished Laptops',
+      title: 'How to Pick the Right Refurbished Laptop for Work',
       date: 'April 19, 2025',
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      title: 'Refurbished Laptops vs Used Laptops: Key Differences',
-      date: 'September 02, 2025',
-      image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      title: 'Complete Guide to Refurbished Desktops for Small Businesses',
-      date: 'March 20, 2025',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80'
     },
     {
-      title: 'Refurbished Laptops for Students - Affordable and Functional',
+      title: 'MacBook vs Windows: Refurb Deals Compared',
+      date: 'September 02, 2025',
+      image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      title: 'Buying Guide: Best Student Laptops Under ₹50K',
+      date: 'March 20, 2025',
+      image: 'https://images.unsplash.com/photo-1517059224940-d4af9eec41e5?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      title: 'Creator Laptops: Displays, GPUs, and Ports Explained',
       date: 'January 27, 2025',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80'
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80'
     }
   ],
   insider: [
     {
-      title: 'The Deal Hunters',
-      desc: 'Our Deal Hunters source the laptops from top corporates and brands.',
-      image: 'https://images.unsplash.com/photo-1515165562835-c3b8c3a7f7c0?auto=format&fit=crop&w=1400&q=80'
+      title: 'Pro-Grade Refurb Labs',
+      desc: 'ESD-safe benches and OEM parts to bring laptops back to life.',
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80'
     },
     {
-      title: 'Certified Labs',
-      desc: 'Devices undergo 45-point checks to ensure like-new performance.',
-      image: 'https://images.unsplash.com/photo-1501250987900-211872d97eaa?auto=format&fit=crop&w=1400&q=80'
+      title: '45-Point Laptop QC',
+      desc: 'Displays, hinges, thermals, battery health, and keyboard feel checked.',
+      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1400&q=80'
     },
     {
-      title: 'Sustainability Meets Style',
-      desc: 'We pair circular economy thinking with sleek, modern hardware.',
-      image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1400&q=80'
+      title: 'Sustainability Meets Speed',
+      desc: 'We pair circular economy thinking with fast, modern laptops.',
+      image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80'
     }
   ],
   testimonials: [
     {
       name: 'Rakesh',
       role: 'IT Lead',
-      quote: 'Staff was super friendly and guided me through all the products.',
-      image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=500&q=80'
+      quote: 'ThinkPad arrived spotless with a fresh battery and top-tier keyboard feel.',
+      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=500&q=80'
     },
     {
       name: 'Ali',
       role: 'Entrepreneur',
-      quote: 'Great pricing, honest grading, and the laptop felt brand new.',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80'
+      quote: 'Picked a MacBook Air for travel; performance and price hit the sweet spot.',
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80'
     },
     {
       name: 'Nishant',
       role: 'Student',
-      quote: 'Customer support helped me pick the right config for college.',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80'
+      quote: 'Got a Ryzen ultrabook with warranty—perfect for classes and coding.',
+      image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=500&q=80'
     },
     {
       name: 'Prerna',
       role: 'Designer',
-      quote: 'Loving the balance of price, warranty, and sustainability.',
-      image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80'
+      quote: 'XPS 13 had zero scratches and a color-accurate panel for my Figma work.',
+      image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=500&q=80'
     }
   ],
   partners: [
@@ -241,35 +261,35 @@ const fallbackContent = {
   ],
   videos: [
     {
-      title: 'How We Are Changing the Game & the Planet',
-      thumb: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1400&q=80'
+      title: 'Inside Our Laptop Refurb Process',
+      thumb: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=1400&q=80'
     },
     {
-      title: 'The Dadar Electronics Impact: Sustainability Meets Style',
-      thumb: 'https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=1400&q=80'
+      title: 'Why Refurbished Laptops Make Sense',
+      thumb: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80'
     }
   ],
   faqs: [
     {
-      question: 'Why Choose Refurbished Laptops?',
+      question: 'Why choose refurbished laptops?',
       answer: 'Refurbished laptops offer premium performance at a fraction of the cost with quality checks and warranties.'
     },
     {
-      question: 'What are some benefits of buying refurbished laptops from Dadar Electronics?',
+      question: 'What are the benefits of buying refurbished laptops from Dadar Electronics?',
       answer: 'You get certified devices, transparent grading, assured warranties, and sustainable tech choices.'
     },
     {
-      question: 'How do we know about the support and warranty services at Dadar Electronics?',
-      answer: 'Every purchase includes clear warranty terms, easy returns, and quick-response support channels.'
+      question: 'How do you support buyers after purchase?',
+      answer: 'Every laptop includes clear warranty terms, easy returns, and quick-response support channels.'
     },
     {
-      question: 'How do I Return or Cancel an Order?',
+      question: 'How do I return or cancel a laptop order?',
       answer: 'Use your order dashboard or reach out via chat/WhatsApp within the return window to initiate cancellations.'
     }
   ],
   footer: {
     about: ['About Us', 'About Dadar Electronics', 'Refurbishing Story', 'Our Story'],
-    products: ['Laptops', 'Desktops', 'Mini PC', 'All in One', 'Monitors'],
+    products: ['Ultrabooks', 'Gaming Laptops', '2-in-1', 'MacBook', 'Windows Laptops'],
     help: ['Contact Us', 'Terms of Service', 'Shipping Policy', 'Return Policy', 'Warranty Policy'],
     contact: ['Reach out to us', '+91-9026265699 (Sales)', 'support@dadarelectronics.com']
   }
