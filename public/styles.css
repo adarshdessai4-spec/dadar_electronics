@@ -82,7 +82,7 @@ main {
 }
 
 .logo-img {
-  height: 44px;
+  height: 60px;
   width: auto;
 }
 
@@ -1018,7 +1018,7 @@ main {
 }
 
 .listing-brand .logo-img {
-  height: 40px;
+  height: 52px;
   width: auto;
 }
 
@@ -1264,6 +1264,10 @@ main {
     display: inline-block;
   }
 
+  .logo-img {
+    height: 52px;
+  }
+
   .logo-mark {
     width: 38px;
     height: 38px;
@@ -1360,6 +1364,10 @@ main {
     position: static;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .listing-brand .logo-img {
+    height: 46px;
   }
 
   .listing-actions {
