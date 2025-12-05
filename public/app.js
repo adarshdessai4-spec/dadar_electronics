@@ -41,7 +41,7 @@ const fallbackContent = {
   nav: {
     logoText: 'Dadar Electronics',
     phone: '+91-9035009233',
-    links: ['MacBook', 'Business Laptops', 'Gaming', 'Student Deals', '2-in-1', 'Creator Series', 'Clearance', 'Accessories']
+    links: ['MacBook', 'Products', 'Students', 'Bulk Orders', 'Dream On', 'Company', 'Store', 'More']
   },
   heroSlides: [
     {
@@ -121,6 +121,138 @@ const fallbackContent = {
       badge: '54% off',
       stock: 'In stock (142 units)',
       image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80'
+    }
+  ],
+  catalog: [
+    {
+      title: 'MacBook Air M1 (2020) • 8GB / 256GB • Space Grey',
+      price: '₹56,999',
+      mrp: '₹92,900',
+      badge: 'Grade A',
+      stock: '54 in stock',
+      image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=900&q=80',
+      tags: ['macbook', 'products', 'students', 'store'],
+      blurb: 'Fanless performance, Retina display, all-day battery for everyday work.'
+    },
+    {
+      title: 'MacBook Air M2 (2022) • 8GB / 512GB • Midnight',
+      price: '₹72,499',
+      mrp: '₹1,19,900',
+      badge: 'Like New',
+      stock: '36 in stock',
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
+      tags: ['macbook', 'products', 'students', 'dream-on', 'store'],
+      blurb: 'MagSafe, 1080p camera, and silent M2 power for creators on the go.'
+    },
+    {
+      title: 'MacBook Pro 14” M1 Pro • 16GB / 512GB • Silver',
+      price: '₹1,09,999',
+      mrp: '₹1,94,900',
+      badge: 'Pro Pick',
+      stock: '18 in stock',
+      image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=900&q=80',
+      tags: ['macbook', 'products', 'company', 'dream-on', 'store'],
+      blurb: 'ProMotion display, triple mics, and fast media engines for edits.'
+    },
+    {
+      title: 'MacBook Pro 16” M1 Max • 32GB / 1TB • Space Grey',
+      price: '₹1,72,499',
+      mrp: '₹3,39,900',
+      badge: 'Flagship',
+      stock: '11 in stock',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80',
+      tags: ['macbook', 'dream-on', 'company'],
+      blurb: 'Mini-LED display, 32-core GPU, and studio speakers for serious production.'
+    },
+    {
+      title: 'MacBook Pro 13” (2020) • i5 • 16GB / 512GB',
+      price: '₹64,999',
+      mrp: '₹1,22,900',
+      badge: 'Value Pro',
+      stock: '42 in stock',
+      image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80',
+      tags: ['macbook', 'products', 'bulk-orders', 'company'],
+      blurb: 'Reliable Intel build with Magic Keyboard and Thunderbolt 3.'
+    },
+    {
+      title: 'MacBook Air (2019) • i5 • 8GB / 256GB',
+      price: '₹44,499',
+      mrp: '₹92,900',
+      badge: 'Student Fav',
+      stock: '63 in stock',
+      image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80',
+      tags: ['macbook', 'students', 'bulk-orders', 'store'],
+      blurb: 'Featherweight with Retina display and fresh battery health.'
+    },
+    {
+      title: 'Dell XPS 13 9310 • i7 11th • 16GB / 512GB',
+      price: '₹62,249',
+      mrp: '₹1,38,900',
+      badge: 'Slim Power',
+      stock: '28 in stock',
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
+      tags: ['products', 'company', 'dream-on', 'store'],
+      blurb: 'InfinityEdge display, carbon fiber palm rest, and Thunderbolt 4.'
+    },
+    {
+      title: 'Lenovo ThinkPad X1 Carbon Gen 10 • i7 • 16GB / 512GB',
+      price: '₹48,449',
+      mrp: '₹1,19,999',
+      badge: 'IT Approved',
+      stock: '72 in stock',
+      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=900&q=80',
+      tags: ['products', 'company', 'bulk-orders', 'store'],
+      blurb: 'MIL-STD build, spill-resistant keyboard, and rapid charge.'
+    },
+    {
+      title: 'HP Envy x360 2-in-1 • Ryzen 5 • 8GB / 512GB',
+      price: '₹49,999',
+      mrp: '₹98,999',
+      badge: '2-in-1',
+      stock: '86 in stock',
+      image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=900&q=80',
+      tags: ['products', 'students', 'more', 'store'],
+      blurb: 'Touchscreen flexibility with fast SSD and strong battery life.'
+    },
+    {
+      title: 'ASUS ROG Zephyrus G14 • Ryzen 9 • RTX 3060',
+      price: '₹94,499',
+      mrp: '₹1,89,999',
+      badge: 'Gaming',
+      stock: '19 in stock',
+      image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80',
+      tags: ['products', 'dream-on', 'more'],
+      blurb: '144Hz display, vapor chamber cooling, and creator-ready GPU.'
+    },
+    {
+      title: 'Acer Swift 3 • Ryzen 7 • 8GB / 512GB • 1.2kg',
+      price: '₹38,449',
+      mrp: '₹82,999',
+      badge: 'Featherlight',
+      stock: '142 in stock',
+      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80',
+      tags: ['products', 'students', 'more'],
+      blurb: 'Featherweight build with Wi‑Fi 6 and long-life battery.'
+    },
+    {
+      title: 'HP EliteBook 840 G7 • i5 10th • 16GB / 512GB',
+      price: '₹41,999',
+      mrp: '₹94,999',
+      badge: 'Business',
+      stock: '103 in stock',
+      image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80',
+      tags: ['products', 'company', 'bulk-orders', 'store'],
+      blurb: 'On-site friendly with LTE option, privacy shutter, and Sure View.'
+    },
+    {
+      title: 'Dell Latitude 5420 • i7 11th • 16GB / 512GB',
+      price: '₹45,499',
+      mrp: '₹1,08,999',
+      badge: 'Bulk Ready',
+      stock: '190 in stock',
+      image: 'https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80',
+      tags: ['products', 'bulk-orders', 'company', 'store'],
+      blurb: 'Fleet-friendly with USB-C docking, Wi-Fi 6, and strong thermals.'
     }
   ],
   categories: [
@@ -307,6 +439,10 @@ async function loadContent() {
   }
 }
 
+function slugify(label) {
+  return (label || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || 'products';
+}
+
 function renderAll(data) {
   renderNav(data.nav);
   renderHero(data.heroSlides);
@@ -329,7 +465,12 @@ loadContent();
 
 function renderNav(nav) {
   navPhone.textContent = nav.phone;
-  mainLinks.innerHTML = nav.links.map((link) => `<span>${link}</span>`).join('');
+  mainLinks.innerHTML = nav.links
+    .map((link) => {
+      const slug = slugify(link);
+      return `<a class="nav-link" data-slug="${slug}" href="list.html?category=${slug}">${link}</a>`;
+    })
+    .join('');
   renderDrawer(nav);
 }
 
@@ -609,13 +750,16 @@ function renderDrawer(nav) {
   drawerList.innerHTML = nav.links
     .map(
       (link) => `
-      <div class="drawer-item">
+      <a class="drawer-item" href="list.html?category=${slugify(link)}" data-slug="${slugify(link)}">
         <span>${link}</span>
         <span>⌄</span>
-      </div>
+      </a>
     `
     )
     .join('');
+  drawerList.querySelectorAll('.drawer-item').forEach((item) =>
+    item.addEventListener('click', () => toggleDrawer(false))
+  );
 }
 
 function toggleDrawer(open) {

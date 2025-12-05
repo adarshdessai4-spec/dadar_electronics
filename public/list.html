@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dadar Electronics | Laptop Listings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="listing-body">
+  <header class="listing-header">
+    <div class="listing-brand">
+      <a href="index.html" class="logo">
+        <img class="logo-img" src="logo.svg" alt="Dadar Electronics logo">
+      </a>
+      <div class="listing-pill">Laptop Catalog</div>
+    </div>
+    <nav class="listing-nav" id="listing-links"></nav>
+    <div class="listing-actions">
+      <a class="primary-btn" href="tel:+919026265699">Talk to Sales</a>
+    </div>
+  </header>
+
+  <main class="listing-main">
+    <section class="listing-hero">
+      <div>
+        <a class="back-link" href="index.html">← Home</a>
+        <div class="accent" id="listing-eyebrow">Laptop Lineup</div>
+        <h1 id="listing-heading">Refurbished Laptops</h1>
+        <p class="listing-desc" id="listing-desc">Pick from all our certified laptops across MacBook, business, student, and gaming builds.</p>
+      </div>
+      <div class="listing-chip" id="listing-chip">Ready to ship</div>
+    </section>
+
+    <section class="listing-toolbar">
+      <div class="listing-chip" id="listing-count">0 laptops</div>
+      <div class="listing-chip" id="listing-tagline">Curated for you</div>
+    </section>
+
+    <section class="listing-grid" id="listing-grid"></section>
+
+    <div class="listing-empty" id="listing-empty" hidden>
+      <h3>No laptops in this category yet</h3>
+      <p>Switch category or call us and we will source it for you.</p>
+      <a class="primary-btn" href="tel:+919035009233">Call us</a>
+    </div>
+  </main>
+
+  <script src="list.js" defer></script>
+</body>
+</html>
