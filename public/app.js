@@ -328,7 +328,7 @@ const fallbackContent = {
       'Like new assured',
       'Performance guarantee'
     ],
-    imageLocal: 'images/hex/hex-1.svg',
+    imageLocal: 'images/hex/hex-1.jpg',
     image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80'
   },
   awards: [
