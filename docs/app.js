@@ -45,8 +45,8 @@ const fallbackContent = {
   },
   heroSlides: [
     {
-      title: '#1 India’s Most Trusted PC Refurbisher',
-      description: 'Awarded for elevating refurbished tech with sustainable style and reliable performance.',
+      title: '#1 India’s Most Trusted Laptop Refurbisher',
+      description: 'Awarded for elevating refurbished laptops with sustainable style and reliable performance.',
       cta: 'Shop Now',
       accent: 'Earth-Friendly Vibes',
       image: 'https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1400&q=80'
@@ -60,7 +60,7 @@ const fallbackContent = {
     },
     {
       title: 'Smart Tech for Smart Budgets.',
-      description: 'Pick from curated laptops, desktops, and mini PCs tuned for work, study, and creators.',
+      description: 'Pick from curated laptops, ultrabooks, and 2-in-1s tuned for work, study, and creators.',
       cta: 'Browse Collections',
       accent: 'Fresh Drops Weekly',
       image: 'https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=1400&q=80'
@@ -99,12 +99,12 @@ const fallbackContent = {
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80'
     },
     {
-      title: 'Dell OptiPlex 3080 Mini PC | Intel i5-10th Gen | Win 11 Pro',
-      price: '₹23,549',
-      mrp: '₹78,653',
-      badge: '70% off',
+      title: 'Dell Latitude 5420 Laptop | Intel i5-10th Gen | 14” FHD | Win 11 Pro',
+      price: '₹45,549',
+      mrp: '₹1,08,653',
+      badge: '58% off',
       stock: 'In stock (113 units)',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80'
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80'
     },
     {
       title: 'HP EliteBook | 840 G5 | Intel i5-8th Gen | 14” | Win 11 Pro',
@@ -115,18 +115,18 @@ const fallbackContent = {
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80'
     },
     {
-      title: 'Lenovo ThinkCentre M910 | Mini PC | Intel i5-6th Gen | Win 10 Pro',
-      price: '₹11,949',
-      mrp: '₹39,099',
-      badge: '70% off',
+      title: 'Lenovo IdeaPad Slim 3 Laptop | Ryzen 5 | 15.6” FHD | Win 11',
+      price: '₹31,949',
+      mrp: '₹68,099',
+      badge: '53% off',
       stock: 'In stock (114 units)',
-      image: 'https://images.unsplash.com/photo-1587202372775-98973f961c78?auto=format&fit=crop&w=900&q=80'
+      image: 'https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=80'
     }
   ],
   categories: [
     { label: 'Laptops', image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
     { label: 'Desktops', image: 'https://images.unsplash.com/photo-1587202372775-98973f961c78?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Mini PC', image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Mini Laptops', image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=300&q=80' },
     { label: 'ChromeBook', image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=300&q=80' },
     { label: 'All in One', image: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1?auto=format&fit=crop&w=300&q=80' },
     { label: 'Accessories', image: 'https://images.unsplash.com/photo-1517059224940-d4af9eec41e5?auto=format&fit=crop&w=300&q=80' }
@@ -269,7 +269,7 @@ const fallbackContent = {
   ],
   footer: {
     about: ['About Us', 'About Dadar Electronics', 'Refurbishing Story', 'Our Story'],
-    products: ['Laptops', 'Desktops', 'Mini PC', 'All in One', 'Monitors'],
+    products: ['Laptops', 'Desktops', 'Mini Laptops', 'All in One', 'Monitors'],
     help: ['Contact Us', 'Terms of Service', 'Shipping Policy', 'Return Policy', 'Warranty Policy'],
     contact: ['Reach out to us', '+91-9026265699 (Sales)', 'support@dadarelectronics.com']
   }
