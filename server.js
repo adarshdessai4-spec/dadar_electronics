@@ -17,6 +17,7 @@ const content = {
       description: 'Certified MacBooks, ThinkPads, and XPS units tuned for productivity, design, and travel.',
       cta: 'Shop Laptops',
       accent: 'Grade A Quality',
+      imageLocal: 'images/hero/hero-1.svg',
       image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1400&q=80'
     },
     {
@@ -24,6 +25,7 @@ const content = {
       description: 'Thin-and-light ultrabooks with pro warranties and zero hidden issues.',
       cta: 'Pick Your Build',
       accent: 'Ready to Work',
+      imageLocal: 'images/hero/hero-2.svg',
       image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=1400&q=80'
     },
     {
@@ -31,6 +33,7 @@ const content = {
       description: 'Laptop-only catalog with transparent grading, fresh batteries, and doorstep delivery.',
       cta: 'See Deals',
       accent: 'Up to 60% Off',
+      imageLocal: 'images/hero/hero-3.svg',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80'
     }
   ],
@@ -48,6 +51,7 @@ const content = {
       mrp: '₹92,900',
       badge: '39% off',
       stock: 'In stock (54 units)',
+      imageLocal: 'images/products/product-1.svg',
       image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=900&q=80'
     },
     {
@@ -56,6 +60,7 @@ const content = {
       mrp: '₹1,19,999',
       badge: '60% off',
       stock: 'In stock (72 units)',
+      imageLocal: 'images/products/product-2.svg',
       image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80'
     },
     {
@@ -64,6 +69,7 @@ const content = {
       mrp: '₹1,38,900',
       badge: '55% off',
       stock: 'In stock (31 units)',
+      imageLocal: 'images/products/product-3.svg',
       image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=900&q=80'
     },
     {
@@ -72,6 +78,7 @@ const content = {
       mrp: '₹98,999',
       badge: '50% off',
       stock: 'In stock (86 units)',
+      imageLocal: 'images/products/product-4.svg',
       image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=900&q=80'
     },
     {
@@ -80,6 +87,7 @@ const content = {
       mrp: '₹1,89,999',
       badge: '50% off',
       stock: 'In stock (19 units)',
+      imageLocal: 'images/products/product-5.svg',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80'
     },
     {
@@ -88,6 +96,7 @@ const content = {
       mrp: '₹82,999',
       badge: '54% off',
       stock: 'In stock (142 units)',
+      imageLocal: 'images/products/product-6.svg',
       image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80'
     }
   ],
@@ -98,6 +107,7 @@ const content = {
       mrp: '₹92,900',
       badge: 'Grade A',
       stock: '54 in stock',
+      imageLocal: 'images/catalog/item-1.svg',
       image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=900&q=80',
       tags: ['macbook', 'products', 'students', 'store'],
       blurb: 'Fanless performance, Retina display, all-day battery for everyday work.'
@@ -108,6 +118,7 @@ const content = {
       mrp: '₹1,19,900',
       badge: 'Like New',
       stock: '36 in stock',
+      imageLocal: 'images/catalog/item-2.svg',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
       tags: ['macbook', 'products', 'students', 'dream-on', 'store'],
       blurb: 'MagSafe, 1080p camera, and silent M2 power for creators on the go.'
@@ -118,6 +129,7 @@ const content = {
       mrp: '₹1,94,900',
       badge: 'Pro Pick',
       stock: '18 in stock',
+      imageLocal: 'images/catalog/item-3.svg',
       image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=900&q=80',
       tags: ['macbook', 'products', 'company', 'dream-on', 'store'],
       blurb: 'ProMotion display, triple mics, and fast media engines for edits.'
@@ -128,6 +140,7 @@ const content = {
       mrp: '₹3,39,900',
       badge: 'Flagship',
       stock: '11 in stock',
+      imageLocal: 'images/catalog/item-4.svg',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80',
       tags: ['macbook', 'dream-on', 'company'],
       blurb: 'Mini-LED display, 32-core GPU, and studio speakers for serious production.'
@@ -138,6 +151,7 @@ const content = {
       mrp: '₹1,22,900',
       badge: 'Value Pro',
       stock: '42 in stock',
+      imageLocal: 'images/catalog/item-5.svg',
       image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80',
       tags: ['macbook', 'products', 'bulk-orders', 'company'],
       blurb: 'Reliable Intel build with Magic Keyboard and Thunderbolt 3.'
@@ -148,6 +162,7 @@ const content = {
       mrp: '₹92,900',
       badge: 'Student Fav',
       stock: '63 in stock',
+      imageLocal: 'images/catalog/item-6.svg',
       image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80',
       tags: ['macbook', 'students', 'bulk-orders', 'store'],
       blurb: 'Featherweight with Retina display and fresh battery health.'
@@ -158,6 +173,7 @@ const content = {
       mrp: '₹1,38,900',
       badge: 'Slim Power',
       stock: '28 in stock',
+      imageLocal: 'images/catalog/item-7.svg',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
       tags: ['products', 'company', 'dream-on', 'store'],
       blurb: 'InfinityEdge display, carbon fiber palm rest, and Thunderbolt 4.'
@@ -168,6 +184,7 @@ const content = {
       mrp: '₹1,19,999',
       badge: 'IT Approved',
       stock: '72 in stock',
+      imageLocal: 'images/catalog/item-8.svg',
       image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=900&q=80',
       tags: ['products', 'company', 'bulk-orders', 'store'],
       blurb: 'MIL-STD build, spill-resistant keyboard, and rapid charge.'
@@ -178,6 +195,7 @@ const content = {
       mrp: '₹98,999',
       badge: '2-in-1',
       stock: '86 in stock',
+      imageLocal: 'images/catalog/item-9.svg',
       image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=900&q=80',
       tags: ['products', 'students', 'more', 'store'],
       blurb: 'Touchscreen flexibility with fast SSD and strong battery life.'
@@ -188,6 +206,7 @@ const content = {
       mrp: '₹1,89,999',
       badge: 'Gaming',
       stock: '19 in stock',
+      imageLocal: 'images/catalog/item-10.svg',
       image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80',
       tags: ['products', 'dream-on', 'more'],
       blurb: '144Hz display, vapor chamber cooling, and creator-ready GPU.'
@@ -198,6 +217,7 @@ const content = {
       mrp: '₹82,999',
       badge: 'Featherlight',
       stock: '142 in stock',
+      imageLocal: 'images/catalog/item-11.svg',
       image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80',
       tags: ['products', 'students', 'more'],
       blurb: 'Featherweight build with Wi‑Fi 6 and long-life battery.'
@@ -208,6 +228,7 @@ const content = {
       mrp: '₹94,999',
       badge: 'Business',
       stock: '103 in stock',
+      imageLocal: 'images/catalog/item-12.svg',
       image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80',
       tags: ['products', 'company', 'bulk-orders', 'store'],
       blurb: 'On-site friendly with LTE option, privacy shutter, and Sure View.'
@@ -218,42 +239,47 @@ const content = {
       mrp: '₹1,08,999',
       badge: 'Bulk Ready',
       stock: '190 in stock',
+      imageLocal: 'images/catalog/item-12.svg',
       image: 'https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80',
       tags: ['products', 'bulk-orders', 'company', 'store'],
       blurb: 'Fleet-friendly with USB-C docking, Wi-Fi 6, and strong thermals.'
     }
   ],
   categories: [
-    { label: 'MacBook', image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Ultrabooks', image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Business Laptops', image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Gaming Laptops', image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=300&q=80' },
-    { label: '2-in-1 Convertibles', image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Student Deals', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=300&q=80' }
+    { label: 'MacBook', imageLocal: 'images/categories/category-1.svg', image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Ultrabooks', imageLocal: 'images/categories/category-2.svg', image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Business Laptops', imageLocal: 'images/categories/category-3.svg', image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Gaming Laptops', imageLocal: 'images/categories/category-4.svg', image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=300&q=80' },
+    { label: '2-in-1 Convertibles', imageLocal: 'images/categories/category-5.svg', image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Student Deals', imageLocal: 'images/categories/category-6.svg', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=300&q=80' }
   ],
   deals: [
     {
       title: 'Under ₹40,000',
       subtitle: 'Value Essentials',
       desc: 'Daily drivers with SSDs and fresh batteries',
+      imageLocal: 'images/deals/deal-1.svg',
       image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Under ₹60,000',
       subtitle: 'Premium Ultrabooks',
       desc: 'Featherweight laptops with all-day endurance',
+      imageLocal: 'images/deals/deal-2.svg',
       image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Under ₹80,000',
       subtitle: 'Creator Setups',
       desc: 'Color-accurate displays and fast SSDs',
+      imageLocal: 'images/deals/deal-3.svg',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Above ₹80,000',
       subtitle: 'Flagship & Gaming',
       desc: 'Maxed-out GPUs, vapor chamber cooling, pro care',
+      imageLocal: 'images/deals/deal-4.svg',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80'
     }
   ],
@@ -268,6 +294,7 @@ const content = {
       'Like new assured',
       'Performance guarantee'
     ],
+    imageLocal: 'images/hex/hex-1.svg',
     image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80'
   },
   awards: [
@@ -291,21 +318,25 @@ const content = {
     {
       title: 'How to Pick the Right Refurbished Laptop for Work',
       date: 'April 19, 2025',
+      imageLocal: 'images/blogs/blog-1.svg',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'MacBook vs Windows: Refurb Deals Compared',
       date: 'September 02, 2025',
+      imageLocal: 'images/blogs/blog-2.svg',
       image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Buying Guide: Best Student Laptops Under ₹50K',
       date: 'March 20, 2025',
+      imageLocal: 'images/blogs/blog-3.svg',
       image: 'https://images.unsplash.com/photo-1517059224940-d4af9eec41e5?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Creator Laptops: Displays, GPUs, and Ports Explained',
       date: 'January 27, 2025',
+      imageLocal: 'images/blogs/blog-4.svg',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80'
     }
   ],
@@ -313,16 +344,19 @@ const content = {
     {
       title: 'Pro-Grade Refurb Labs',
       desc: 'ESD-safe benches and OEM parts to bring laptops back to life.',
+      imageLocal: 'images/insider/insider-1.svg',
       image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80'
     },
     {
       title: '45-Point Laptop QC',
       desc: 'Displays, hinges, thermals, battery health, and keyboard feel checked.',
+      imageLocal: 'images/insider/insider-2.svg',
       image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1400&q=80'
     },
     {
       title: 'Sustainability Meets Speed',
       desc: 'We pair circular economy thinking with fast, modern laptops.',
+      imageLocal: 'images/insider/insider-3.svg',
       image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80'
     }
   ],
@@ -331,24 +365,28 @@ const content = {
       name: 'Rakesh',
       role: 'IT Lead',
       quote: 'ThinkPad arrived spotless with a fresh battery and top-tier keyboard feel.',
+      imageLocal: 'images/testimonials/testimonial-1.svg',
       image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=500&q=80'
     },
     {
       name: 'Ali',
       role: 'Entrepreneur',
       quote: 'Picked a MacBook Air for travel; performance and price hit the sweet spot.',
+      imageLocal: 'images/testimonials/testimonial-2.svg',
       image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80'
     },
     {
       name: 'Nishant',
       role: 'Student',
       quote: 'Got a Ryzen ultrabook with warranty—perfect for classes and coding.',
+      imageLocal: 'images/testimonials/testimonial-3.svg',
       image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=500&q=80'
     },
     {
       name: 'Prerna',
       role: 'Designer',
       quote: 'XPS 13 had zero scratches and a color-accurate panel for my Figma work.',
+      imageLocal: 'images/testimonials/testimonial-4.svg',
       image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=500&q=80'
     }
   ],
@@ -362,10 +400,12 @@ const content = {
   videos: [
     {
       title: 'Inside Our Laptop Refurb Process',
+      thumbLocal: 'images/videos/video-1.svg',
       thumb: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=1400&q=80'
     },
     {
       title: 'Why Refurbished Laptops Make Sense',
+      thumbLocal: 'images/videos/video-2.svg',
       thumb: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80'
     }
   ],

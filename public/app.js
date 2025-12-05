@@ -45,6 +45,13 @@ function goToCategory(slug) {
   window.location.href = `list.html?category=${slug || 'products'}`;
 }
 
+function imageTag(local, remote, alt, className = '') {
+  const src = local || remote || '';
+  const fallbackAttr = local && remote ? ` onerror="this.onerror=null;this.src='${remote}'"` : '';
+  const classAttr = className ? ` class="${className}"` : '';
+  return `<img src="${src}" alt="${alt || ''}"${classAttr}${fallbackAttr}>`;
+}
+
 const fallbackContent = {
   nav: {
     logoText: 'Dadar Electronics',
@@ -57,6 +64,7 @@ const fallbackContent = {
       description: 'Certified MacBooks, ThinkPads, and XPS units tuned for productivity, design, and travel.',
       cta: 'Shop Laptops',
       accent: 'Grade A Quality',
+      imageLocal: 'images/hero/hero-1.svg',
       image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1400&q=80'
     },
     {
@@ -64,6 +72,7 @@ const fallbackContent = {
       description: 'Thin-and-light ultrabooks with pro warranties and zero hidden issues.',
       cta: 'Pick Your Build',
       accent: 'Ready to Work',
+      imageLocal: 'images/hero/hero-2.svg',
       image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=1400&q=80'
     },
     {
@@ -71,6 +80,7 @@ const fallbackContent = {
       description: 'Laptop-only catalog with transparent grading, fresh batteries, and doorstep delivery.',
       cta: 'See Deals',
       accent: 'Up to 60% Off',
+      imageLocal: 'images/hero/hero-3.svg',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80'
     }
   ],
@@ -88,6 +98,7 @@ const fallbackContent = {
       mrp: '₹92,900',
       badge: '39% off',
       stock: 'In stock (54 units)',
+      imageLocal: 'images/products/product-1.svg',
       image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=900&q=80'
     },
     {
@@ -96,6 +107,7 @@ const fallbackContent = {
       mrp: '₹1,19,999',
       badge: '60% off',
       stock: 'In stock (72 units)',
+      imageLocal: 'images/products/product-2.svg',
       image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80'
     },
     {
@@ -104,6 +116,7 @@ const fallbackContent = {
       mrp: '₹1,38,900',
       badge: '55% off',
       stock: 'In stock (31 units)',
+      imageLocal: 'images/products/product-3.svg',
       image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=900&q=80'
     },
     {
@@ -112,6 +125,7 @@ const fallbackContent = {
       mrp: '₹98,999',
       badge: '50% off',
       stock: 'In stock (86 units)',
+      imageLocal: 'images/products/product-4.svg',
       image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=900&q=80'
     },
     {
@@ -120,6 +134,7 @@ const fallbackContent = {
       mrp: '₹1,89,999',
       badge: '50% off',
       stock: 'In stock (19 units)',
+      imageLocal: 'images/products/product-5.svg',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80'
     },
     {
@@ -128,6 +143,7 @@ const fallbackContent = {
       mrp: '₹82,999',
       badge: '54% off',
       stock: 'In stock (142 units)',
+      imageLocal: 'images/products/product-6.svg',
       image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80'
     }
   ],
@@ -264,36 +280,40 @@ const fallbackContent = {
     }
   ],
   categories: [
-    { label: 'MacBook', image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Ultrabooks', image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Business Laptops', image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Gaming Laptops', image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=300&q=80' },
-    { label: '2-in-1 Convertibles', image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=300&q=80' },
-    { label: 'Student Deals', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=300&q=80' }
+    { label: 'MacBook', imageLocal: 'images/categories/category-1.svg', image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Ultrabooks', imageLocal: 'images/categories/category-2.svg', image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Business Laptops', imageLocal: 'images/categories/category-3.svg', image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Gaming Laptops', imageLocal: 'images/categories/category-4.svg', image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=300&q=80' },
+    { label: '2-in-1 Convertibles', imageLocal: 'images/categories/category-5.svg', image: 'https://images.unsplash.com/photo-1527443224154-d1af0e9864b4?auto=format&fit=crop&w=300&q=80' },
+    { label: 'Student Deals', imageLocal: 'images/categories/category-6.svg', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=300&q=80' }
   ],
   deals: [
     {
       title: 'Under ₹40,000',
       subtitle: 'Value Essentials',
       desc: 'Daily drivers with SSDs and fresh batteries',
+      imageLocal: 'images/deals/deal-1.svg',
       image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Under ₹60,000',
       subtitle: 'Premium Ultrabooks',
       desc: 'Featherweight laptops with all-day endurance',
+      imageLocal: 'images/deals/deal-2.svg',
       image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Under ₹80,000',
       subtitle: 'Creator Setups',
       desc: 'Color-accurate displays and fast SSDs',
+      imageLocal: 'images/deals/deal-3.svg',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Above ₹80,000',
       subtitle: 'Flagship & Gaming',
       desc: 'Maxed-out GPUs, vapor chamber cooling, pro care',
+      imageLocal: 'images/deals/deal-4.svg',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80'
     }
   ],
@@ -308,6 +328,7 @@ const fallbackContent = {
       'Like new assured',
       'Performance guarantee'
     ],
+    imageLocal: 'images/hex/hex-1.svg',
     image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80'
   },
   awards: [
@@ -331,21 +352,25 @@ const fallbackContent = {
     {
       title: 'How to Pick the Right Refurbished Laptop for Work',
       date: 'April 19, 2025',
+      imageLocal: 'images/blogs/blog-1.svg',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'MacBook vs Windows: Refurb Deals Compared',
       date: 'September 02, 2025',
+      imageLocal: 'images/blogs/blog-2.svg',
       image: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Buying Guide: Best Student Laptops Under ₹50K',
       date: 'March 20, 2025',
+      imageLocal: 'images/blogs/blog-3.svg',
       image: 'https://images.unsplash.com/photo-1517059224940-d4af9eec41e5?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Creator Laptops: Displays, GPUs, and Ports Explained',
       date: 'January 27, 2025',
+      imageLocal: 'images/blogs/blog-4.svg',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80'
     }
   ],
@@ -353,16 +378,19 @@ const fallbackContent = {
     {
       title: 'Pro-Grade Refurb Labs',
       desc: 'ESD-safe benches and OEM parts to bring laptops back to life.',
+      imageLocal: 'images/insider/insider-1.svg',
       image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80'
     },
     {
       title: '45-Point Laptop QC',
       desc: 'Displays, hinges, thermals, battery health, and keyboard feel checked.',
+      imageLocal: 'images/insider/insider-2.svg',
       image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1400&q=80'
     },
     {
       title: 'Sustainability Meets Speed',
       desc: 'We pair circular economy thinking with fast, modern laptops.',
+      imageLocal: 'images/insider/insider-3.svg',
       image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80'
     }
   ],
@@ -371,24 +399,28 @@ const fallbackContent = {
       name: 'Rakesh',
       role: 'IT Lead',
       quote: 'ThinkPad arrived spotless with a fresh battery and top-tier keyboard feel.',
+      imageLocal: 'images/testimonials/testimonial-1.svg',
       image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=500&q=80'
     },
     {
       name: 'Ali',
       role: 'Entrepreneur',
       quote: 'Picked a MacBook Air for travel; performance and price hit the sweet spot.',
+      imageLocal: 'images/testimonials/testimonial-2.svg',
       image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80'
     },
     {
       name: 'Nishant',
       role: 'Student',
       quote: 'Got a Ryzen ultrabook with warranty—perfect for classes and coding.',
+      imageLocal: 'images/testimonials/testimonial-3.svg',
       image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=500&q=80'
     },
     {
       name: 'Prerna',
       role: 'Designer',
       quote: 'XPS 13 had zero scratches and a color-accurate panel for my Figma work.',
+      imageLocal: 'images/testimonials/testimonial-4.svg',
       image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=500&q=80'
     }
   ],
@@ -402,10 +434,12 @@ const fallbackContent = {
   videos: [
     {
       title: 'Inside Our Laptop Refurb Process',
+      thumbLocal: 'images/videos/video-1.svg',
       thumb: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=1400&q=80'
     },
     {
       title: 'Why Refurbished Laptops Make Sense',
+      thumbLocal: 'images/videos/video-2.svg',
       thumb: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80'
     }
   ],
@@ -502,7 +536,7 @@ function renderHero(slides) {
           <button class="hero-cta">${slide.cta} →</button>
         </div>
         <div class="visual">
-          <img src="${slide.image}" alt="${slide.title}">
+          ${imageTag(slide.imageLocal, slide.image, slide.title)}
         </div>
       </div>
     `
@@ -596,7 +630,7 @@ function renderProducts(products) {
     .map(
       (p) => `
       <div class="product-card">
-        <img src="${p.image}" alt="${p.title}">
+        ${imageTag(p.imageLocal, p.image, p.title)}
         <div class="product-body">
           <div class="stock">● ${p.stock}</div>
           <div class="product-title">${p.title}</div>
@@ -618,7 +652,7 @@ function renderCategories(categories) {
     .map(
       (c) => `
       <div class="category">
-        <img src="${c.image}" alt="${c.label}">
+        ${imageTag(c.imageLocal, c.image, c.label)}
         <span>${c.label}</span>
       </div>
     `
@@ -631,7 +665,7 @@ function renderDeals(deals) {
     .map(
       (d) => `
       <div class="deal-card">
-        <img src="${d.image}" alt="${d.title}">
+        ${imageTag(d.imageLocal, d.image, d.title)}
         <div class="deal-body">
           <div class="deal-title">${d.title}</div>
           <div class="deal-subtitle">${d.subtitle}</div>
@@ -646,8 +680,16 @@ function renderDeals(deals) {
 function renderHexatrust(hex) {
   hexDesc.textContent = hex.desc;
   hexList.innerHTML = hex.bullets.map((b) => `<li>${b}</li>`).join('');
-  hexImage.src = hex.image;
+  hexImage.src = hex.imageLocal || hex.image;
   hexImage.alt = hex.title;
+  if (hex.imageLocal && hex.image) {
+    hexImage.onerror = () => {
+      hexImage.onerror = null;
+      hexImage.src = hex.image;
+    };
+  } else {
+    hexImage.onerror = null;
+  }
 }
 
 function renderInsider(slides) {
@@ -655,7 +697,7 @@ function renderInsider(slides) {
     .map(
       (s) => `
       <div class="story-card">
-        <img src="${s.image}" alt="${s.title}">
+        ${imageTag(s.imageLocal, s.image, s.title)}
         <div class="story-copy">
           <div class="story-title">${s.title}</div>
           <div class="story-desc">${s.desc}</div>
@@ -685,7 +727,7 @@ function renderBlogs(blogs) {
     .map(
       (b) => `
       <div class="blog-card">
-        <img src="${b.image}" alt="${b.title}">
+        ${imageTag(b.imageLocal, b.image, b.title)}
         <div class="blog-body">
           <div class="blog-date">🗓️ ${b.date}</div>
           <div class="blog-title">${b.title}</div>
@@ -701,7 +743,7 @@ function renderTestimonials(testimonials) {
     .map(
       (t) => `
       <div class="story-card">
-        <img src="${t.image}" alt="${t.name}">
+        ${imageTag(t.imageLocal, t.image, t.name)}
         <div class="story-copy">
           <div class="story-title">${t.name} • ${t.role}</div>
           <div class="story-desc">${t.quote}</div>
@@ -748,7 +790,8 @@ function renderFaqs(faqs) {
 
 function renderVideo(video) {
   if (!video) return;
-  videoFeature.querySelector('.video-overlay').style.backgroundImage = `url('${video.thumb}')`;
+  const bg = video.thumbLocal || video.thumb;
+  videoFeature.querySelector('.video-overlay').style.backgroundImage = `url('${bg}')`;
   videoTitle.textContent = video.title;
 }
 
