@@ -1,16 +1,16 @@
 :root {
-  --bg: #0f0d13;
-  --panel: #181618;
-  --card: #1f1c24;
-  --card-strong: #221f2b;
-  --text: #f7f6ff;
-  --muted: #b2aec2;
-  --accent: #e44c65;
-  --accent-2: #c34658;
-  --line: #2d2736;
-  --pill: #252131;
-  --shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
-  --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.35);
+  --bg: #f6f3fb;
+  --panel: #ffffff;
+  --card: #ffffff;
+  --card-strong: #f1edf8;
+  --text: #161321;
+  --muted: #5e5672;
+  --accent: #c34658;
+  --accent-2: #8c3058;
+  --line: #e4dfef;
+  --pill: #f1edf8;
+  --shadow: 0 12px 32px rgba(19, 9, 35, 0.14);
+  --shadow-soft: 0 10px 24px rgba(19, 9, 35, 0.12);
 }
 
 * {
@@ -54,8 +54,8 @@ main {
   align-items: center;
   gap: 24px;
   padding: 14px 28px;
-  background: linear-gradient(90deg, #1f1a26, #2a2232, #c34658);
-  color: var(--text);
+  background: linear-gradient(90deg, #2a2232, #8c3058, #c34658);
+  color: #fff;
 }
 
 .nav-left {
@@ -103,14 +103,16 @@ main {
 
 .logo-text {
   font-size: 20px;
+  color: #fff;
 }
 
 .category-trigger {
   font-weight: 600;
   padding: 10px 14px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.14);
   border-radius: 10px;
   cursor: pointer;
+  color: #fff;
 }
 
 .nav-search {
@@ -172,7 +174,7 @@ main {
   border: 1px solid var(--line);
   display: grid;
   place-items: center;
-  color: var(--text);
+  color: var(--accent);
   font-size: 15px;
   background: var(--card);
   cursor: pointer;
@@ -378,6 +380,7 @@ main {
   border-radius: 18px;
   position: relative;
   transition: transform 0.6s ease;
+  background: var(--card);
 }
 
 .hero-slide {
@@ -1019,21 +1022,21 @@ main {
 }
 
 .listing-body {
-  background: #f8f7ff;
-  color: #121212;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .listing-header {
   position: sticky;
   top: 0;
   z-index: 12;
-  background: #fff;
+  background: var(--panel);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   padding: 12px 20px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-soft);
 }
 
 .listing-brand {
@@ -1065,15 +1068,15 @@ main {
 .listing-nav a {
   padding: 10px 12px;
   border-radius: 999px;
-  background: #f0f2f7;
+  background: var(--pill);
   font-weight: 600;
-  color: #4b2ec9;
+  color: var(--text);
   text-decoration: none;
   transition: all 0.15s ease;
 }
 
 .listing-nav a.active {
-  background: linear-gradient(135deg, #7a5bff, #e44c65);
+  background: linear-gradient(135deg, #2a2232, #c34658);
   color: #fff;
   box-shadow: 0 10px 24px rgba(228, 76, 101, 0.25);
 }
@@ -1142,9 +1145,9 @@ main {
 }
 
 .listing-card {
-  background: #fff;
+  background: var(--card);
   border-radius: 16px;
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.07);
+  box-shadow: var(--shadow-soft);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1226,11 +1229,11 @@ main {
 
 .listing-empty {
   text-align: center;
-  background: #fff;
+  background: var(--card);
   border-radius: 16px;
   padding: 32px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
-  color: #4a4d55;
+  box-shadow: var(--shadow-soft);
+  color: var(--muted);
 }
 
 @media (max-width: 960px) {
