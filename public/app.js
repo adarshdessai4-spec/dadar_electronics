@@ -37,7 +37,7 @@ let heroSlides = [];
 let heroIndex = 0;
 let heroTimer;
 
-const ASSET_VERSION = 'v1';
+const ASSET_VERSION = 'v2';
 
 function slugify(label) {
   return (label || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || 'products';

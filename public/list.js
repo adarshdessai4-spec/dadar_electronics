@@ -8,7 +8,7 @@ const listingCount = document.getElementById('listing-count');
 const listingTagline = document.getElementById('listing-tagline');
 const listingEmpty = document.getElementById('listing-empty');
 
-const ASSET_VERSION = 'v1';
+const ASSET_VERSION = 'v2';
 
 const params = new URLSearchParams(window.location.search);
 const initialSlug = params.get('category') || 'products';
