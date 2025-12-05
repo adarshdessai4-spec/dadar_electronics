@@ -8,6 +8,8 @@ const listingCount = document.getElementById('listing-count');
 const listingTagline = document.getElementById('listing-tagline');
 const listingEmpty = document.getElementById('listing-empty');
 
+const ASSET_VERSION = 'v1';
+
 const params = new URLSearchParams(window.location.search);
 const initialSlug = params.get('category') || 'products';
 
@@ -229,9 +231,14 @@ function formatTag(tag) {
   return (tag || '').replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+function versioned(path) {
+  if (!path) return '';
+  return path.includes('?') ? path : `${path}?v=${ASSET_VERSION}`;
+}
+
 function resolveImage(local, remote) {
   return {
-    src: local || remote || '',
+    src: local ? versioned(local) : remote || '',
     fallback: local && remote ? remote : ''
   };
 }

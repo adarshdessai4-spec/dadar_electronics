@@ -37,6 +37,8 @@ let heroSlides = [];
 let heroIndex = 0;
 let heroTimer;
 
+const ASSET_VERSION = 'v1';
+
 function slugify(label) {
   return (label || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || 'products';
 }
@@ -45,8 +47,13 @@ function goToCategory(slug) {
   window.location.href = `list.html?category=${slug || 'products'}`;
 }
 
+function versioned(path) {
+  if (!path) return '';
+  return path.includes('?') ? path : `${path}?v=${ASSET_VERSION}`;
+}
+
 function imageTag(local, remote, alt, className = '') {
-  const src = local || remote || '';
+  const src = local ? versioned(local) : remote || '';
   const fallbackAttr = local && remote ? ` onerror="this.onerror=null;this.src='${remote}'"` : '';
   const classAttr = className ? ` class="${className}"` : '';
   return `<img src="${src}" alt="${alt || ''}"${classAttr}${fallbackAttr}>`;
@@ -328,8 +335,8 @@ const fallbackContent = {
       'Like new assured',
       'Performance guarantee'
     ],
-    imageLocal: 'images/hex/hex-1.jpg?v=2',
-    image: 'images/hex/hex-1.jpg?v=2'
+    imageLocal: 'images/hex/hex-1.jpg',
+    image: 'images/hex/hex-1.jpg'
   },
   awards: [
     {
@@ -680,7 +687,7 @@ function renderDeals(deals) {
 function renderHexatrust(hex) {
   hexDesc.textContent = hex.desc;
   hexList.innerHTML = hex.bullets.map((b) => `<li>${b}</li>`).join('');
-  hexImage.src = hex.imageLocal || hex.image;
+  hexImage.src = hex.imageLocal ? versioned(hex.imageLocal) : hex.image;
   hexImage.alt = hex.title;
   if (hex.imageLocal && hex.image) {
     hexImage.onerror = () => {

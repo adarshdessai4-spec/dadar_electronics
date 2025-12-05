@@ -294,8 +294,8 @@ const content = {
       'Like new assured',
       'Performance guarantee'
     ],
-    imageLocal: 'images/hex/hex-1.jpg?v=2',
-    image: 'images/hex/hex-1.jpg?v=2'
+    imageLocal: 'images/hex/hex-1.jpg',
+    image: 'images/hex/hex-1.jpg'
   },
   awards: [
     {
