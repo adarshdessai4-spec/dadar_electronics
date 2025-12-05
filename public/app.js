@@ -37,6 +37,14 @@ let heroSlides = [];
 let heroIndex = 0;
 let heroTimer;
 
+function slugify(label) {
+  return (label || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || 'products';
+}
+
+function goToCategory(slug) {
+  window.location.href = `list.html?category=${slug || 'products'}`;
+}
+
 const fallbackContent = {
   nav: {
     logoText: 'Dadar Electronics',
@@ -471,6 +479,12 @@ function renderNav(nav) {
       return `<a class="nav-link" data-slug="${slug}" href="list.html?category=${slug}">${link}</a>`;
     })
     .join('');
+  mainLinks.querySelectorAll('.nav-link').forEach((link) =>
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      goToCategory(link.dataset.slug);
+    })
+  );
   renderDrawer(nav);
 }
 
@@ -750,15 +764,18 @@ function renderDrawer(nav) {
   drawerList.innerHTML = nav.links
     .map(
       (link) => `
-      <a class="drawer-item" href="list.html?category=${slugify(link)}" data-slug="${slugify(link)}">
+      <button class="drawer-item" type="button" data-slug="${slugify(link)}">
         <span>${link}</span>
         <span>⌄</span>
-      </a>
+      </button>
     `
     )
     .join('');
   drawerList.querySelectorAll('.drawer-item').forEach((item) =>
-    item.addEventListener('click', () => toggleDrawer(false))
+    item.addEventListener('click', () => {
+      goToCategory(item.dataset.slug);
+      toggleDrawer(false);
+    })
   );
 }
 
